@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Full Score" enabled="true"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Full Score" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;userId&quot;: &quot;${ext-user-id}&quot;,&#xd;
+  &quot;scoreGiven&quot;: ${scoreGiven},&#xd;
+  &quot;scoreMaximum&quot;: ${scoreMaximum},&#xd;
+  &quot;comment&quot;: &quot;&quot;,&#xd;
+  &quot;timestamp&quot;: &quot;${date}Z&quot;,&#xd;
+  &quot;activityProgress&quot;: &quot;Completed&quot;,&#xd;
+  &quot;gradingProgress&quot;: &quot;FullyGraded&quot;,&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/testInstanceId&quot;: 201975,&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/items/feedback&quot;: {&#xd;
+    &quot;examId&quot;: &quot;684ed9c7-bedd-4be0-83c9-3f17f8699fd8&quot;,&#xd;
+    &quot;created&quot;: &quot;2020-08-17T15:13:21.923Z&quot;,&#xd;
+    &quot;examTitle&quot;: &quot;IELTSiReadingMVP&quot;,&#xd;
+    &quot;responses&quot;: [&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Choose the correct answer. According to the writer,\n      \n      there was a need for new ways of attracting trade.\n       there was a widening gap between rich and poor.\n      there were positive and negative effects of industrialisation.\n      there were unexpected reasons for increased consumerism.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;In the 19th century, the rise of industry in the United States allowed people to access and consume goods as never before. This, combined with the population’s move towards urban centers and the expansion of the railroad, turned America into a culture of consumers desperate for time-saving and leisure commodities. The tremendous variety of goods available for sale required businesses to compete for customers in ways they had never before imagined.\n      \n      \n      Choose the correct answer. According to the writer,\n      \n      there was a need for new ways of attracting trade.\n      there was a widening gap between rich and poor.\n      there were positive and negative effects of industrialisation.\n      there were unexpected reasons for increased consumerism. &quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To help improve your understanding of main ideas, read the text carefully to match the information in it to the options given in the question. Once you have located the relevant information in the text, check which option has exactly the same meaning. You may need to identify the writer’s main point, and how it is developed in the paragraph.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;there was a need for new ways of attracting trade.&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;there was a need for new ways of attracting trade.&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_1&quot;,&#xd;
+        &quot;questionNumber&quot;: 1,&#xd;
+        &quot;questionReference&quot;: &quot;af8dca77-c9ec-4eed-8356-91cf47e19a3c&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;You are correct – the whole paragraph is about the rise of consumerism and industrialisation. The last sentence tells us the result of this: that businesses had to find ways of attracting customers, or ‘trade’, in new ways and competing with other businesses.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Purchasing on credit helped poor people to move into the middle class.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;One marketing tactic that took off in 19th-century America was the option to purchase on credit. This meant that luxury items such as pianos were now accessible to poorer people who were eager to move into the middle class. In addition, farmers and housewives purchased farm equipment and sewing machines on credit, considering them as investments. For example, a sewing machine allowed a woman to make a shirt in one hour, instead of fourteen.\n      \n      \n      Do the following statements agree with the claims of the writer?\n      \n      Choose YES if the statement agrees with the claims of the writer of the text, choose NO if the statement contradicts the claims of the writer, or choose NOT GIVEN if it is impossible to say what the writer thinks about this.\n      \n      Purchasing on credit helped poor people to move into the middle class.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;For Yes/No/Not Given questions, the difference between No and Not Given can be tricky. To decide which answer is correct, it is helpful to think about whether the writer has directly contradicted the statement in the question, in which case the answer would be No. Or, if they have not given enough information to completely match all parts of the statement, then the answer would be Not Given.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;NO&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_2&quot;,&#xd;
+        &quot;questionNumber&quot;: 2,&#xd;
+        &quot;questionReference&quot;: &quot;6d0c3dd9-8f72-4eee-b32a-9295b54d8a98&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;The writer does not rule out the idea that poorer people could move into the middle class, and outlines a few ways that it might be possible, including investing in items to earn more money quickly. But have another look at the second sentence; does the writer say that they failed to become middle class?&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;What is the most suitable heading for this paragraph?&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;One marketing tactic that took off in 19th-century America was the option to purchase on credit. This meant that luxury items such as pianos were now accessible to poorer people who were eager to move into the middle class. In addition, farmers and housewives purchased farm equipment and sewing machines on credit, considering them as investments. For example, a sewing machine allowed a woman to make a shirt in one hour, instead of fourteen.\n      \n      \n      What is the most suitable heading for this paragraph?\n      \n      A misguided attitude to investment\n      The effects of a change in payment methods\n      The strengthening of social class distinctions\n      Growing wealth in different sections of society&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To get the main idea of a paragraph, look carefully at the introductory sentences.  They often set out the topic which is then developed in the paragraph. Also, remember that linkers, such as in addition and for example, introduce extra information to support a main point that has already been introduced.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;The effects of a change in payment methods&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;The effects of a change in payment methods&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_3&quot;,&#xd;
+        &quot;questionNumber&quot;: 3,&#xd;
+        &quot;questionReference&quot;: &quot;2e00024a-0462-4ac5-8b74-5aa4ca62bb5d&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Correct! The first sentence tells us that in 19th-century America, people were encouraged to buy things on credit. This is a change in payment methods. The rest of the paragraph explains the effects of this change, giving several examples. This answer therefore summarises the main idea of the whole paragraph.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;The increased availability of credit in 19th-century America meant consumers were less at risk than before.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Of course, easy credit terms meant many people were in debt, and changes in wages, unexpected expenses or illness could wreak havoc on a household’s tenuous finances. Still, 19th-century Americans quickly accepted the notion that they could achieve a better lifestyle by purchasing the right clothes, the best hair cream and the shiniest shoes.\n      \n      \n      Do the following statements agree with the views of the writer?\n      \n      Choose YES if the statement agrees with the views/claims of the writer of the text, choose NO if the statement contradicts the views/claims of the writer, or choose NOT GIVEN if it is impossible to say what the writer thinks about this.\n      \n      The increased availability of credit in 19th-century America meant consumers were less at risk than before.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;Yes/No/Not Given questions test your understanding of the writer’s opinion, not just of facts. This means that you need to find the information mentioned in the statement and then look closely at the connotations of the words that the writer has chosen to use. This will help you to decide what they think about a topic.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;YES&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;NO&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_4&quot;,&#xd;
+        &quot;questionNumber&quot;: 4,&#xd;
+        &quot;questionReference&quot;: &quot;b907b3f5-1ced-4377-a94e-9782ce47d0bc&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;There are two parts to this statement. The first part is correct because credit was more available, but the writer does not say that consumers were less at risk. Take another look at the first sentence. Do you think ‘wreak havoc’ refers to something good or something bad?&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Which of the following is the most suitable title for the text?&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;In the 19th century, the rise of industry in the United States allowed people to access and consume goods as never before. This, combined with the population’s move towards urban centres and the expansion of the railroad, turned America into a culture of consumers desperate for time-saving and leisure commodities. The tremendous variety of goods available for sale required businesses to compete for customers in ways they had never before imagined.\n      \n      One marketing tactic that took off in 19th-century America was the option to purchase on credit. This meant that luxury items such as pianos were now accessible to poorer people who were eager to move into the middle class. In addition, farmers and housewives purchased farm equipment and sewing machines on credit, considering them as investments. For example, a sewing machine allowed a woman to make a shirt in one hour, instead of fourteen.\n      \n      Of course, easy credit terms meant many people were in debt, and changes in wages, unexpected expenses or illness could wreak havoc on a household’s tenuous finances. Still, 19th-century Americans quickly accepted the notion that they could achieve a better lifestyle by purchasing the right clothes, the best hair cream and the shiniest shoes.\n      \n      Which of the following is the most suitable title for the text?\n      \n      Industrialisation: Developing modern cities\n      Industrialisation: Bringing luxury to the poor\n      Industrialisation: Fuelling a national debt crisis\n      Industrialisation: Transforming the economy &quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;When deciding on the title for a text, which requires understanding of the main topic, it is important to establish what the writer’s main point is. They usually introduce it in the first sentence, and then give examples and an explanation of the topic in the following paragraphs.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;Industrialisation: Developing modern cities&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;Industrialisation: Transforming the economy&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_5&quot;,&#xd;
+        &quot;questionNumber&quot;: 5,&#xd;
+        &quot;questionReference&quot;: &quot;dcc786db-0d04-458e-91ea-b98b495c32d3&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;The idea of cities developing is mentioned in the first paragraph, with the idea of urbanisation; and the idea of the development of ‘urban centres’ is mentioned in sentence two, but this is cited as one of the causes of increased consumption rather than being the main point of the article. Try reading the first sentence again, looking at the examples that the writer uses to develop their point.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;According to Dr Ramage, timber is cheaper to transport than concrete.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Recent innovations in engineered timber could allow the building of sustainable wooden cities, helping reverse emissions from the construction industry. Dr Michael Ramage said, ‘Concrete is about five times heavier than timber, which means more expense for transport and foundations; it’s resource-intensive and contributes to tremendous carbon dioxide emissions. After water, concrete is the material most consumed by humanity. But now we have an alternative, and it’s plant-based.’\n      \n      \n      Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this.\n      \n      According to Dr Ramage, timber is cheaper to transport than concrete.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;For True/False/Not Given tasks, remember that the language of the question will not always be the same as the language of the text. Use clues in the question to identify the relevant part of the text and then think about whether the meaning is the same or different, or whether it is impossible to know from the text what the facts are.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_6_7&quot;,&#xd;
+        &quot;questionNumber&quot;: 6,&#xd;
+        &quot;questionReference&quot;: &quot;0b4060ca-dfb3-4713-a1a9-c314783a006a&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;You got this right – well done! You identified that in the second sentence, Dr Michael Ramage mentions that timber is lighter than concrete, and therefore cheaper to transport.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Foundations made from concrete are more solid than those made from timber.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Recent innovations in engineered timber could allow the building of sustainable wooden cities, helping reverse emissions from the construction industry. Dr Michael Ramage said, ‘Concrete is about five times heavier than timber, which means more expense for transport and foundations; it’s resource-intensive and contributes to tremendous carbon dioxide emissions. After water, concrete is the material most consumed by humanity. But now we have an alternative, and it’s plant-based.’\n      \n      \n      Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this.\n      \n      Foundations made from concrete are more solid than those made from timber.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To improve your skills in understanding details, it is important to find the key words in the statement, and then find where they are mentioned in the text. Decide whether there is enough information for you to be able to choose true or false and, if so, check whether the text completely agrees or disagrees with the statement.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_6_7&quot;,&#xd;
+        &quot;questionNumber&quot;: 7,&#xd;
+        &quot;questionReference&quot;: &quot;799e46ce-7832-4524-9914-d4ba5aa32fab&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Correct! Although the text mentions foundations made of concrete, there is not enough information to know whether concrete foundations are more solid than timber ones.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;What is the writer doing in this paragraph?&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Dr Ramage explained: ‘In England alone, we need to build 340,000 new homes each year over the next 12 years to accommodate our expanding population. Timber is the only building material we can grow, and every tonne of timber removes 1.8 tonnes of carbon dioxide from the atmosphere. If all new English homes were constructed from timber, we could offset the carbon footprints of around 850,000 people for 10 years.’\n      \n      \n      What is the writer doing in this paragraph?\n      \n      describing the negative impact of population growth on the environment\n      identifying the most effective way of slowing down climate change\n      providing evidence for the environmental benefits of one building material\n      supporting the argument that trees should not be cut down on a large scale&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To improve your understanding of the main idea of a paragraph, focus on the topic sentence to see whether you can identify what the writer is saying about the topic. Make sure that all of the parts of the option you choose are addressed in the paragraph – if any part of it is missing, it will not be the correct option. It can also be useful to think about what the purpose of the writer is in writing the text: is the writer trying to describe something, identify a solution, give evidence for something, or support one side of an argument?&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;identifying the most effective way of slowing down climate change&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;providing evidence for the environmental benefits of one building material&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_8&quot;,&#xd;
+        &quot;questionNumber&quot;: 8,&#xd;
+        &quot;questionReference&quot;: &quot;160b810d-4e54-4f00-a122-346e54bb6662&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Climate change is hinted at throughout the text with the ideas of sustainability and carbon dioxide emissions but there is no explicit mention that timber is the best way of slowing down climate change. When trying this again, look at the first sentence to get the main topic and then try to decide what the writer is trying to say about that main topic.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;The Egyptians\n       - were the first people to have a ………………… for blue&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;The colour blue rarely appears in nature – there are few blue animals, fruits or vegetables – and the early painter’s palette was restricted to ‘earth colours’: reds, browns, yellows and blacks. The only ancient culture to use a word that meant ‘blue’ was that of the Ancient Egyptians, who adorned their rulers’ tombs with blue pigment made from a semi-precious stone called lapis lazuli. However, this was a prohibitively expensive process.\n      \n      \n      Write ONE WORD ONLY from the text in each gap.\n      \n      The colour blue\n      The Egyptians\n       - were the first people to have a ………………… for blue&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To help you develop your skill with finding details, read the notes carefully, paying attention to the title and the words immediately around the gap, and identifying key words. Use these to help you locate the right part of the text, then read this carefully. Check that your answer makes sense and that you have followed the instructions exactly. Your answer must be just one word and must be spelt correctly.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;word&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;word&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_9_10&quot;,&#xd;
+        &quot;questionNumber&quot;: 9,&#xd;
+        &quot;questionReference&quot;: &quot;7c4d7d1d-152b-4db3-b65f-012a94f27fe4&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Well done, you were correct! The second sentence says the Egyptians were the only ancient culture to use a word that meant blue.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;The Egyptians\n       - used blue colouring to decorate the …………………  of their leaders&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;The colour blue rarely appears in nature – there are few blue animals, fruits or vegetables – and the early painter’s palette was restricted to ‘earth colours’: reds, browns, yellows and blacks. The only ancient culture to use a word that meant ‘blue’ was that of the Ancient Egyptians, who adorned their rulers’ tombs with blue pigment made from a semi-precious stone called lapis lazuli. However, this was a prohibitively expensive process.\n      \n      \n      Write ONE WORD ONLY from the text in each gap.\n      \n      The colour blue\n      The Egyptians\n       - used blue colouring to decorate the …………………  of their leaders&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;When searching for details to fill in notes, remember to look for synonyms of the key words in the text – the notes are a summary of the information. Remember to check that the word you have chosen makes sense in the sentence and in the text as a whole. When you are happy that it does, copy the word exactly, as spelling errors or forgetting the ‘s’ at the end of a word will not get you a mark.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;tomb&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;tombs&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_9_10&quot;,&#xd;
+        &quot;questionNumber&quot;: 10,&#xd;
+        &quot;questionReference&quot;: &quot;91b7f645-32b8-44c7-8989-72aa04b77d0b&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Your answer must be the exact word used in the text and must be correctly spelt. If you wrote tomb your answer is wrong as the text refers to tombs.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Artificial blue dye was\n       - made around the Mediterranean using a particular process\n      - also made in a different way, using copper and …………………&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;In about 2500BC, the Egyptians discovered that by heating lime, sand and copper together they could create an artificial blue dye. This process spread around the Mediterranean world and was widely used until about 800AD. Other ancient civilisations followed suit. In China, copper was also used, but it was sometimes blended with mercury. It was even believed that these new shades of blue could cure diseases, so new and exciting were they.\n      \n      \n      Complete the notes. Write ONE WORD ONLY from the text in each gap.\n      \n      Artificial blue dye was\n       - made around the Mediterranean using a particular process\n       - also made in a different way, using copper and …………………&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;When trying to find the details in a text to complete notes, remember to read the whole set of notes, including the subheading at the beginning. Your answer must make grammatical sense and have exactly the same meaning as the text. Look for words like also which refer back to information higher up in the notes.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;lime&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;mercury&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_11_12&quot;,&#xd;
+        &quot;questionNumber&quot;: 11,&#xd;
+        &quot;questionReference&quot;: &quot;b00895e9-4e1a-4c87-a4f6-31f51bb7027a&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;The completed notes must have exactly the same meaning as the text. Lime is incorrect as the Egyptians used this, not the Chinese.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Artificial blue dye was\n      - believed to be effective against …………………&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;In about 2500BC, the Egyptians discovered that by heating lime, sand and copper together they could create an artificial blue dye. This process spread around the Mediterranean world and was widely used until about 800AD. Other ancient civilisations followed suit. In China, copper was also used, but it was sometimes blended with mercury. It was even believed that these new shades of blue could cure diseases, so new and exciting were they.\n      \n      \n      Complete the notes. Write ONE WORD ONLY from the text in each gap.\n      \n      Artificial blue dye was\n       - believed to be effective against …………………&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;When choosing words from a text to insert into gapped notes, check for paraphrases of the targeted information and think about the main points that the notes are drawing out of the text. Also, remember to read the instructions so you know how many words from the text you are supposed to write.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;diseases&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;diseases&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_11_12&quot;,&#xd;
+        &quot;questionNumber&quot;: 12,&#xd;
+        &quot;questionReference&quot;: &quot;61ad8209-05f9-43e2-8f38-fdd01a502037&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Well done! ‘Believed’ in the last sentence of the text has the same meaning as thought in the notes. And ‘cure diseases’ is a paraphrase of ‘effective against diseases’ in this context.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;What is the most suitable title for this paragraph?&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;The average person is more honest than we think: the more money a lost wallet contains, the more likely they are to return it. A study in 40 countries used 17,000 trackable ‘lost’ wallets and found that those containing cash were more likely to be returned than those without cash. This is probably partly down to altruism, but also because most people don’t want to think of themselves as a thief.\n      \n      \n      What is the most suitable title for this paragraph?\n      \n      Research into the honesty of thieves\n      The distinction between loss and theft\n      Humans prove surprisingly selfless\n      Petty thieves lack self-awareness&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;In order to identify the main idea of a text, focus on the first sentence, as it can help introduce the topic, and the final sentence because it often gives the reader a useful concluding thought about the topic. When reading the options in a question about main ideas, check whether all parts of the option are addressed in the text, and that they are a main idea rather than a detail.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;The distinction between loss and theft&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;Humans prove surprisingly selfless&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_13&quot;,&#xd;
+        &quot;questionNumber&quot;: 13,&#xd;
+        &quot;questionReference&quot;: &quot;73c3d999-0de0-4eff-a917-139dfffc2db7&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Both loss and theft are mentioned in this paragraph, but no conclusion is drawn about the difference between them. Have a look again at the topic and concluding sentences to see what the main topic of the paragraph is and how the writer develops the idea.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;According to the writer,\n      \n      the invention of the weekend caused economic changes.\n      time was measured incorrectly before the industrial revolution.\n      the invention of the working day made people more industrious.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Overseas exploration and trading in the 15th and 16th centuries, and the industrial revolution in 18th- and 19th-century Europe, completely changed the way people gauged and understood time. This made people more productive, but it also affected their lives in other ways. The short-term time frames in our day-to-day experience today – concepts like the working day and the weekend – were in fact relatively recent inventions brought about by these economic changes.\n      \n      \n      According to the writer,\n      \n      the invention of the weekend caused economic changes.\n      time was measured incorrectly before the industrial revolution.\n      the invention of the working day made people more industrious.\n      time must be measured in short-term time frames to bring about economic changes.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To follow a complex main point throughout a text, it is helpful to establish what is being referred to when you see words such as this or definite articles because they are signalling that a concept has already been mentioned and is being developed, or more information is being given about it.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;the invention of the working day made people more industrious.&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;the invention of the working day made people more industrious.&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_14&quot;,&#xd;
+        &quot;questionNumber&quot;: 14,&#xd;
+        &quot;questionReference&quot;: &quot;579e1386-ba13-404f-b336-449e84a78617&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;You were right! You correctly identified that workers became more productive, as highlighted in the second sentence. The word ‘this’ at the beginning of the second sentence refers to the way that time was measured and understood, mentioned in the previous sentence, and these two ideas continue to be referenced in the last sentence as ‘short-term time frames’ of which the working day is an example.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;What devices did sailors need to use to plot the direction their ships sailed in?&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Three forces contributed to the modern invention of time. First, trade with foreign territories across the ocean required precise navigation with accurate timepieces. Second, the invention of the railroad required the standardization of time across countries, replacing local systems of keeping time by the sun. Third, the industrial economy necessitated the introduction of labor laws, which changed the way people thought about working hours. These developments helped power the industrial revolution and make our modern world.\n      \n      \n      Write NO MORE THAN TWO WORDS from the text in each gap.\n      \n      What devices did sailors need to use to plot the direction their ships sailed in?&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;Your ability to find relevant details in a text can be improved in short-answer questions by paying attention to the question words used. Here ‘what devices’ means that you are looking for a word which is a type of device, and other key words in the question will help you to check that you have chosen the right word(s). The instruction is also important in giving you the option to write two words instead of one, so it can be useful to add in a relevant adjective to make your answer more specific. Be careful, however, not to write more than two words.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;compass&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;(accurate) timepieces&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_15_16&quot;,&#xd;
+        &quot;questionNumber&quot;: 15,&#xd;
+        &quot;questionReference&quot;: &quot;d7268093-7132-4c06-946a-540048227173&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Your answer wasn&apos;t quite right. Read the tip below and then Try Again.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Which regulations contributed to the modern understanding of time?&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Three forces contributed to the modern invention of time. First, trade with foreign territories across the ocean required precise navigation with accurate timepieces. Second, the invention of the railroad required the standardization of time across countries, replacing local systems of keeping time by the sun. Third, the industrial economy necessitated the introduction of labor laws, which changed the way people thought about working hours. These developments helped power the industrial revolution and make our modern world.\n      \n      \n      Write NO MORE THAN TWO WORDS from the text in each gap.\n      \n      Which regulations contributed to the modern understanding of time?&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To identify the details required to answer this type of question, remember to look for key words in the question and find them, or their synonyms, in the text. In this case, you know that you are looking for a ‘regulation’ in this question, so you can scan the text for this. Check that the word(s) you have chosen match the rest of the information in the question.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;railways&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;labor/labour laws&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_15_16&quot;,&#xd;
+        &quot;questionNumber&quot;: 16,&#xd;
+        &quot;questionReference&quot;: &quot;22923f1c-9c79-4f8c-b140-dfebec0ddf45&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Your answer wasn&apos;t quite right. Read the tip below and then Try Again.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;Multi-tasking can have negative effects on attention spans.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;One downside of society’s increased focus on short-term time frames is that people’s attention spans are becoming increasingly limited. This is aggravated by the acceleration of technology, the short-horizon perspective of market-driven economics, and the distractions of personal multi-tasking. Some sort of balancing corrective to the short-sightedness is needed which encourages the long view and the taking of long-term responsibility, where ‘long term’ is measured at least in centuries.\n      \n      \n      Choose YES if the statement agrees with the views/claims of the writer of the text, choose NO if the statement contradicts the views/claims of the writer, or choose NOT GIVEN if it is impossible to say what the writer thinks about this.\n      \n      Multi-tasking can have negative effects on attention spans.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;Remember that you are being tested on the writer’s opinions rather than fact or your general knowledge in this type of question. This requires you to develop your skill in finding details. Look for the key concept in the question and pick out words or phrases that help you to decide whether it is referred to in a positive or negative way, or not enough to get an idea of the writer’s opinion. It is also helpful to look for referencing words to see whether previous sentences contain relevant opinions on the topic.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;YES&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;YES&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_17&quot;,&#xd;
+        &quot;questionNumber&quot;: 17,&#xd;
+        &quot;questionReference&quot;: &quot;e804a9fb-790e-4b97-aa04-a2949e5bd4af&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Well done! In the first two sentences, we are told that people’s attention spans are ‘becoming... limited’ and that this is aggravated by various things, including the distractions of multi-tasking. ‘Aggravated’ and ‘distractions’ both suggest that this is a negative effect.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;The 10,000 hours rule was developed from research done on musicians.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;The ‘10,000 hours rule’ of expertise states that the number of hours of specialised training is the sole factor in skill development, in any domain. Deliberate practice, according to the study of 30 violinists that the rule was based on, occurs when learners are given explicit guidance about the best method by an instructor, repeatedly perform the same or similar tasks, and are supplied with immediate feedback.\n      \n      \n      Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this.\n      \n      The 10,000 hours rule was developed from research done on musicians.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To improve your ability to understand sentences in this type of task, think carefully about linked words with similar meanings, such as ‘study’ and ‘research’.  Also, notice how words with a fairly general meaning (e.g. musician) may be used to replace more specific words (e.g. violinist) without a change in meaning, and how nouns with a definite article (e.g. the rule) often refer to something that has already been mentioned.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;FALSE&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_18_19&quot;,&#xd;
+        &quot;questionNumber&quot;: 18,&#xd;
+        &quot;questionReference&quot;: &quot;2ccca7e5-a75e-4224-bc31-0293802de006&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Take another look at the second sentence. This refers to the study of violinists that the rule is based on. In this context, a study is the same as research. Having established this, you then need to decide whether violinists can also be referred to as musicians, and whether the rule refers to the 10,000 hours rule mentioned in the previous sentence. In this text, both of these things are true.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;The research found that repetition is the most important part of practice.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Understanding sentences&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;The ‘10,000 hours rule’ of expertise states that the number of hours of specialised training is the sole factor in skill development, in any domain. Deliberate practice, according to the study of 30 violinists that the rule was based on, occurs when learners are given explicit guidance about the best method by an instructor, repeatedly perform the same or similar tasks, and are supplied with immediate feedback.\n      \n      \n      Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this.\n      \n      The research found that repetition is the most important part of practice.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;This type of question requires you to understand sentences well. Improve your ability by checking the statement for key words and concepts which paraphrase what is written in the text. Then you need to go into detail by reading carefully to see whether the statement is entirely represented by the text. In statements that include superlatives such as ‘most important’, check that the text really does say that something is the most important, and is not just an example in a list.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_18_19&quot;,&#xd;
+        &quot;questionNumber&quot;: 19,&#xd;
+        &quot;questionReference&quot;: &quot;5a42d7fe-1b32-4b01-9d1b-0621e0933a03&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;You got the correct answer! The second sentence gives three aspects of deliberate practice. One of these aspects is when learners ‘repeatedly perform... tasks’. This means that repetition is an important part of practice – but the writer does not say it is the most important, or compare how important the different aspects are.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;In this paragraph, the writer argues that becoming an elite athlete\n      \n      involves receiving carefully controlled feedback.\n      is linked to early exposure to different activities.\n      requires being taught about one’s abilities.\n      demands highly-specialised training at a young age.&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;Identifying main ideas&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;It is true that elite athletes spend more time on focused practice each week than those who are less successful. However, scientists have found that, at a younger age, those who go on to become elite athletes typically play a variety of sports, usually in an unstructured or lightly structured environment. They gain a range of physical proficiencies; they learn about their own abilities; and only later do they focus in on one area.\n      \n      \n      In this paragraph, the writer argues that becoming an elite athlete\n      involves receiving carefully controlled feedback.\n      is linked to early exposure to different activities.\n      requires being taught about one’s abilities.\n      demands highly-specialised training at a young age.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To improve your understanding of main ideas at paragraph level, it is useful to look at how the writer develops their ideas by introducing examples of what they mean. It can also help to look for linking words that might explain a bit more about the writer’s view. For example, here ‘however’ indicates that they are presenting an opposing view to the one in the first sentence.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;is linked to early exposure to different activities.&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;is linked to early exposure to different activities.&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_20&quot;,&#xd;
+        &quot;questionNumber&quot;: 20,&#xd;
+        &quot;questionReference&quot;: &quot;c9a22410-825b-4f9a-a9ff-8d4c73373b55&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Well done – you were right! The writer’s main point here is exactly this, despite the fact that the first sentence sounds as though they might disagree with it. They establish their point of view in the second sentence and go on to explain the benefits of having been exposed to a variety of activities at a young age, in the last sentence, supporting their view.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;Reading&quot;,&#xd;
+        &quot;context&quot;: &quot;There is evidence that some experts lack the ..................... of skills necessary to do their job well.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;Finding details&quot;,&#xd;
+        &quot;tryAgain&quot;: &quot;Research into the way in which different skills are acquired is providing increasing evidence that it takes time to develop a personal and professional range – but also that there are benefits to doing so. It appears that highly-credentialed experts who fail to do this can become so narrow-minded that they actually become less efficient, even while becoming more confident, and this can be a recipe for disaster.\n      \n      \n      Write ONE WORD ONLY from the text in the gap.\n      \n      There is evidence that some experts lack the ..................... of skills necessary to do their job well.&quot;,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: &quot;To help find relevant details so that you can fill the gap, it is important to identify the part of the text that the sentence is paraphrasing. Then, look at the words around the gap and check that your chosen word from the text fits grammatically, as well as matching the meaning of the text.&quot;,&#xd;
+        &quot;givenAnswer&quot;: &quot;type&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;range&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IELTSiReadingMVP_21&quot;,&#xd;
+        &quot;questionNumber&quot;: 21,&#xd;
+        &quot;questionReference&quot;: &quot;5967ab62-b8af-4372-bdd0-d967e16b34a0&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Your answer wasn&apos;t quite right. Read the tip below and then Try Again.&quot;&#xd;
+      }&#xd;
+    ],&#xd;
+    &quot;sessionId&quot;: &quot;e351f339-1fd5-4407-92fe-bfe5e58cafba&quot;,&#xd;
+    &quot;studentId&quot;: &quot;994078&quot;,&#xd;
+    &quot;templateId&quot;: &quot;IELTSI_PIE&quot;,&#xd;
+    &quot;overallResults&quot;: {&#xd;
+      &quot;skills&quot;: [&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;Reading&quot;,&#xd;
+          &quot;cutoffs&quot;: [&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+              &quot;value&quot;: 70&#xd;
+            },&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;OK&quot;,&#xd;
+              &quot;value&quot;: 50&#xd;
+            }&#xd;
+          ],&#xd;
+          &quot;subskills&quot;: [&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;Identifying main ideas&quot;,&#xd;
+              &quot;cutoffs&quot;: [&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+                  &quot;value&quot;: 70&#xd;
+                },&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;OK&quot;,&#xd;
+                  &quot;value&quot;: 50&#xd;
+                }&#xd;
+              ],&#xd;
+              &quot;aboveCutoff&quot;: true,&#xd;
+              &quot;description&quot;: null,&#xd;
+              &quot;displayName&quot;: null,&#xd;
+              &quot;feedbackText&quot;: null,&#xd;
+              &quot;totalCorrect&quot;: 4,&#xd;
+              &quot;levelAchieved&quot;: &quot;OK&quot;,&#xd;
+              &quot;percentageResult&quot;: 57,&#xd;
+              &quot;maxPossibleTotalCorrect&quot;: 7&#xd;
+            },&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;Understanding sentences&quot;,&#xd;
+              &quot;cutoffs&quot;: [&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+                  &quot;value&quot;: 70&#xd;
+                },&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;OK&quot;,&#xd;
+                  &quot;value&quot;: 50&#xd;
+                }&#xd;
+              ],&#xd;
+              &quot;aboveCutoff&quot;: false,&#xd;
+              &quot;description&quot;: null,&#xd;
+              &quot;displayName&quot;: null,&#xd;
+              &quot;feedbackText&quot;: null,&#xd;
+              &quot;totalCorrect&quot;: 3,&#xd;
+              &quot;levelAchieved&quot;: null,&#xd;
+              &quot;percentageResult&quot;: 43,&#xd;
+              &quot;maxPossibleTotalCorrect&quot;: 7&#xd;
+            },&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;Finding details&quot;,&#xd;
+              &quot;cutoffs&quot;: [&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+                  &quot;value&quot;: 70&#xd;
+                },&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;OK&quot;,&#xd;
+                  &quot;value&quot;: 50&#xd;
+                }&#xd;
+              ],&#xd;
+              &quot;aboveCutoff&quot;: false,&#xd;
+              &quot;description&quot;: null,&#xd;
+              &quot;displayName&quot;: null,&#xd;
+              &quot;feedbackText&quot;: null,&#xd;
+              &quot;totalCorrect&quot;: 3,&#xd;
+              &quot;levelAchieved&quot;: null,&#xd;
+              &quot;percentageResult&quot;: 43,&#xd;
+              &quot;maxPossibleTotalCorrect&quot;: 7&#xd;
+            }&#xd;
+          ],&#xd;
+          &quot;aboveCutoff&quot;: false,&#xd;
+          &quot;description&quot;: null,&#xd;
+          &quot;displayName&quot;: null,&#xd;
+          &quot;feedbackText&quot;: null,&#xd;
+          &quot;totalCorrect&quot;: 10,&#xd;
+          &quot;levelAchieved&quot;: null,&#xd;
+          &quot;percentageResult&quot;: 48,&#xd;
+          &quot;maxPossibleTotalCorrect&quot;: 21&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;cutoffs&quot;: [&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+          &quot;value&quot;: 70&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;OK&quot;,&#xd;
+          &quot;value&quot;: 50&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;aboveCutoff&quot;: false,&#xd;
+      &quot;totalCorrect&quot;: 10,&#xd;
+      &quot;levelAchieved&quot;: null,&#xd;
+      &quot;percentageResult&quot;: 48,&#xd;
+      &quot;maxPossibleTotalCorrect&quot;: 21&#xd;
+    },&#xd;
+    &quot;resultsComplete&quot;: true,&#xd;
+    &quot;sessionReference&quot;: &quot;201975&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/lti/platforms/${platformId}/contexts/${sharedOrgId}/lineitems/${resLinkId}/scores</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${access-token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Message Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="1859946287">Scores saved successfully.</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.custom_message">Could not get correct Response!</stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">2</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <stringProp name="JSON_PATH">$.message</stringProp>
+          <stringProp name="EXPECTED_VALUE"></stringProp>
+          <boolProp name="JSONVALIDATION">false</boolProp>
+          <boolProp name="EXPECT_NULL">false</boolProp>
+          <boolProp name="INVERT">true</boolProp>
+          <boolProp name="ISREGEX">true</boolProp>
+        </JSONPathAssertion>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Part Score" enabled="true"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Part Score" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;userId&quot;: &quot;${ext-user-id}&quot;,&#xd;
+  &quot;scoreGiven&quot;: ${scoreGiven},&#xd;
+  &quot;scoreMaximum&quot;: ${scoreMaximum},&#xd;
+  &quot;comment&quot;: &quot;${comment}&quot;,&#xd;
+  &quot;timestamp&quot;: &quot;${date}Z&quot;,&#xd;
+  &quot;activityProgress&quot;: &quot;${activityProgress}&quot;,&#xd;
+  &quot;gradingProgress&quot;: &quot;${gradingProgress}&quot;,&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/testInstanceId&quot;: 200607,&#xd;
+  &quot;https://www.cambridgeassessment.org.uk/lti/items/feedback&quot;: {&#xd;
+    &quot;examId&quot;: &quot;beac1539-742a-4b3b-a030-cf30ba7a93f5&quot;,&#xd;
+    &quot;created&quot;: &quot;2020-08-17T15:13:22.102Z&quot;,&#xd;
+    &quot;examTitle&quot;: &quot;Adv_T1_RUE_Compass3&quot;,&#xd;
+    &quot;responses&quot;: [&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;A   there was a need for new ways of attracting customers.&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;A   there was a need for new ways of attracting customers.&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample4optMCQ&quot;,&#xd;
+        &quot;questionNumber&quot;: 1,&#xd;
+        &quot;questionReference&quot;: &quot;017442bf-3797-442c-9bab-4f0ec257679e&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: &quot;Option A&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample4optMCQ&quot;,&#xd;
+        &quot;questionNumber&quot;: 2,&#xd;
+        &quot;questionReference&quot;: &quot;c2b3698d-489d-4df5-a16d-d2f887c67eaf&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;C   Industrialisation: Fuelling a debt crisis&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;D   Industrialisation: Transforming the economy&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample 4 opt MCQ global&quot;,&#xd;
+        &quot;questionNumber&quot;: 3,&#xd;
+        &quot;questionReference&quot;: &quot;be2e3e3d-12dc-49a3-940b-b8e60b6ea3fd&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;TRUE&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample TFNG&quot;,&#xd;
+        &quot;questionNumber&quot;: 4,&#xd;
+        &quot;questionReference&quot;: &quot;b4b14f77-ef27-48cb-9459-82223c722eaa&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;NOT GIVEN&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample YNNG&quot;,&#xd;
+        &quot;questionNumber&quot;: 5,&#xd;
+        &quot;questionReference&quot;: &quot;3cb32dfd-3a2f-493e-ad8e-ccd57fdb1081&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;What do the students agree are the TWO main arguments against planting trees to prevent climate change? A  It may lead to water shortages.   B  The claims for its effectiveness are exaggerated. C  It could prevent other more useful developments.  D  It might use up land needed for agriculture. E  The biodiversity of the area may be affected.  Choice 1  __________ \n  Choice 2 ...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: &quot;Choose TWO answers.\n          \n    \n      \n    \n    \n        What do the students agree are the TWO main arguments against planting trees to prevent climate change? A  It may lead to water shortages.   B  The claims for its effectiveness are exaggerated. C  It could prevent other more useful developments.  D  It might use up land needed for agriculture. E  The biodiversity of the area may be affected.  Choice 1  __________ \n  Choice 2  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;D&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;B &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Listening 5 opt MCQ&quot;,&#xd;
+        &quot;questionNumber&quot;: 6,&#xd;
+        &quot;questionReference&quot;: &quot;9714d42a-ad57-4553-ac62-c3461c159b5b&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;...  Choice 2  __________&quot;,&#xd;
+        &quot;correct&quot;: true,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: &quot;Choose TWO answers.\n          \n    \n      \n    \n    \n        What do the students agree are the TWO main arguments against planting trees to prevent climate change? A  It may lead to water shortages.   B  The claims for its effectiveness are exaggerated. C  It could prevent other more useful developments.  D  It might use up land needed for agriculture. E  The biodiversity of the area may be affected.  Choice 1  __________ \n  Choice 2  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;B&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;B&quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Listening 5 opt MCQ&quot;,&#xd;
+        &quot;questionNumber&quot;: 7,&#xd;
+        &quot;questionReference&quot;: &quot;4a7463b7-9e0f-4ba6-b712-47bcbb3f3caa&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: null,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: null,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;B  the development of new ways of finding food. &quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;C  the movement of humans to different parts of the world.     &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Listening MCQ&quot;,&#xd;
+        &quot;questionNumber&quot;: 8,&#xd;
+        &quot;questionReference&quot;: &quot;d64d5a61-8576-46cb-a4ff-3171e29f054d&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;Palm Grove  __________ Golden Sands ...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: &quot;What is the main reason why each of the following holiday resorts is recommended?\n          \n    \n      \n    \n    \n        Palm Grove  __________ Golden Sands  __________ Farndale Lodge  __________ \n  Beach Central  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;A  its historical surroundings&quot;,&#xd;
+        &quot;correctAnswer&quot;: &quot;C  its peaceful setting  &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Matching Alternative&quot;,&#xd;
+        &quot;questionNumber&quot;: 9,&#xd;
+        &quot;questionReference&quot;: &quot;3046c2b2-584b-4f36-a822-ad0a4b110923&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;...Golden Sands  __________ Farndale Lodge ...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;What is the main reason why each of the following holiday resorts is recommended?\n          \n    \n      \n    \n    \n        Palm Grove  __________ Golden Sands  __________ Farndale Lodge  __________ \n  Beach Central  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: &quot;A  its historical surroundings  &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Matching Alternative&quot;,&#xd;
+        &quot;questionNumber&quot;: 10,&#xd;
+        &quot;questionReference&quot;: &quot;8bfa9bab-e85c-4145-8704-43aa3e38375f&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;...Farndale Lodge  __________ \n  Beach Central ...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;What is the main reason why each of the following holiday resorts is recommended?\n          \n    \n      \n    \n    \n        Palm Grove  __________ Golden Sands  __________ Farndale Lodge  __________ \n  Beach Central  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: &quot;E  its suitability for children  &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Matching Alternative&quot;,&#xd;
+        &quot;questionNumber&quot;: 11,&#xd;
+        &quot;questionReference&quot;: &quot;9fccdf14-8b14-4cea-b382-c4501a685cbe&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;... Beach Central  __________&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;What is the main reason why each of the following holiday resorts is recommended?\n          \n    \n      \n    \n    \n        Palm Grove  __________ Golden Sands  __________ Farndale Lodge  __________ \n  Beach Central  __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: &quot;B  its good nightlife &quot;,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Matching Alternative&quot;,&#xd;
+        &quot;questionNumber&quot;: 12,&#xd;
+        &quot;questionReference&quot;: &quot;de911f10-ff48-40ba-813d-5ba278734460&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;CARE ASSISTANT JOB Work involves  \n        - visiting elderly people in their homes - providing help with meals,  __________ \n , household tasks and shopping. Pay  - starts at maximum 2 £...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: &quot;Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.\n          \n    \n      \n    \n    \n      \n        CARE ASSISTANT JOB Work involves  \n        - visiting elderly people in their homes - providing help with meals,  __________ \n , household tasks and shopping. Pay  - starts at maximum 2 £ __________ \n per hour&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;testt&quot;,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Listening Note Completion&quot;,&#xd;
+        &quot;questionNumber&quot;: 13,&#xd;
+        &quot;questionReference&quot;: &quot;36f5a305-1473-4a3e-b616-5d323f63b36a&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;..., household tasks and shopping. Pay  - starts at maximum 2 £ __________ \n per hour&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: true,&#xd;
+        &quot;inputText&quot;: &quot;Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.\n          \n    \n      \n    \n    \n      \n        CARE ASSISTANT JOB Work involves  \n        - visiting elderly people in their homes - providing help with meals,  __________ \n , household tasks and shopping. Pay  - starts at maximum 2 £ __________ \n per hour&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: &quot;170&quot;,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Listening Note Completion&quot;,&#xd;
+        &quot;questionNumber&quot;: 14,&#xd;
+        &quot;questionReference&quot;: &quot;d394f3bf-6f50-4819-bc3b-b531900a0178&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: null&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;The colour blue rarely appears in nature – there are few blue animals, fruits or vegetables – and the early painter’s palette was restricted to ‘earth colours’: reds, browns, yellows and blacks. The only ancient culture to use a word that meant ‘blue’ was that of the Egyptians, who adorned their rulers’ tombs with blue pigment made from a semi-precious stone called lapis lazuli. However, this was a prohibitively expensive process.   Complete the notes. Write ONE WORD ONLY from the text in each gap.The Colour BlueThe Egyptians  - were the first people to have a __________ \n for blue - used blue colouring to decorate the...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;Complete the notes. Write ONE WORD ONLY from the text in each gap.\n          \n    \n      \n        The colour blue rarely appears in nature – there are few blue animals, fruits or vegetables – and the early painter’s palette was restricted to ‘earth colours’: reds, browns, yellows and blacks. The only ancient culture to use a word that meant ‘blue’ was that of the Egyptians, who adorned their rulers’ tombs with blue pigment made from a semi-precious stone called lapis lazuli. However, this was a prohibitively expensive process.   Complete the notes. Write ONE WORD ONLY from the text in each gap.The Colour BlueThe Egyptians  - were the first people to have a __________ \n for blue - used blue colouring to decorate the __________ \n of their leaders&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Note Completion&quot;,&#xd;
+        &quot;questionNumber&quot;: 15,&#xd;
+        &quot;questionReference&quot;: &quot;4d21e129-00eb-40ca-91a4-d72f596870fa&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;...for blue - used blue colouring to decorate the __________ \n of their leaders&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;Complete the notes. Write ONE WORD ONLY from the text in each gap.\n          \n    \n      \n        The colour blue rarely appears in nature – there are few blue animals, fruits or vegetables – and the early painter’s palette was restricted to ‘earth colours’: reds, browns, yellows and blacks. The only ancient culture to use a word that meant ‘blue’ was that of the Egyptians, who adorned their rulers’ tombs with blue pigment made from a semi-precious stone called lapis lazuli. However, this was a prohibitively expensive process.   Complete the notes. Write ONE WORD ONLY from the text in each gap.The Colour BlueThe Egyptians  - were the first people to have a __________ \n for blue - used blue colouring to decorate the __________ \n of their leaders&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Note Completion&quot;,&#xd;
+        &quot;questionNumber&quot;: 16,&#xd;
+        &quot;questionReference&quot;: &quot;bef045f2-8bad-4366-955d-602f44a2c66d&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;Research into the way in which different skills are acquired is providing increasing evidence that it takes time to develop personal and professional range – but also that there are benefits to doing so. It appears that highly credentialed experts who fail to do this can become so narrow-minded that they actually become less efficient, even while becoming more confident, and this can be a recipe for disaster. Complete the sentence. Write ONE WORD ONLY from the text in the gap.There is evidence that some experts lack the __________ \n of skills necessary to do their job well.&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;Complete the sentence. Write ONE WORD ONLY from the text in the gap.\n          \n    \n      \n        Research into the way in which different skills are acquired is providing increasing evidence that it takes time to develop personal and professional range – but also that there are benefits to doing so. It appears that highly credentialed experts who fail to do this can become so narrow-minded that they actually become less efficient, even while becoming more confident, and this can be a recipe for disaster. Complete the sentence. Write ONE WORD ONLY from the text in the gap.There is evidence that some experts lack the __________ \n of skills necessary to do their job well.&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Sentence Completion&quot;,&#xd;
+        &quot;questionNumber&quot;: 17,&#xd;
+        &quot;questionReference&quot;: &quot;62a915b8-dba8-4f53-a057-7a57fbac448a&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;Three forces contributed to the moderninvention of time. First, trade with foreign territories across the ocean required precise navigation with accurate timepieces. Second, the invention of the railroad required the standardization of time across countries, replacing local systems of keeping time by the sun. Third, the industrial economy necessitated the introduction of labor laws, which changed the way people thought about work. These developments helped power the industrial revolution and make our modern world.Answer the questions. Write NO MORE THAN TWO WORDS from the text in each gap.  What device did sailors need to use to plot the direction theirships sailed in? __________ Which requirement of the industrial economy affectedattitudes to work?...&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;Answer the questions. Write NO MORE THAN TWO WORDS from the text in each gap.      \n          \n    \n      \n        Three forces contributed to the moderninvention of time. First, trade with foreign territories across the ocean required precise navigation with accurate timepieces. Second, the invention of the railroad required the standardization of time across countries, replacing local systems of keeping time by the sun. Third, the industrial economy necessitated the introduction of labor laws, which changed the way people thought about work. These developments helped power the industrial revolution and make our modern world.Answer the questions. Write NO MORE THAN TWO WORDS from the text in each gap.  What device did sailors need to use to plot the direction theirships sailed in? __________ Which requirement of the industrial economy affectedattitudes to work? __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Short Answer Questions&quot;,&#xd;
+        &quot;questionNumber&quot;: 18,&#xd;
+        &quot;questionReference&quot;: &quot;61932c51-37a1-454f-9db3-418e45fcbc08&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      },&#xd;
+      {&#xd;
+        &quot;skill&quot;: &quot;&quot;,&#xd;
+        &quot;context&quot;: &quot;...Which requirement of the industrial economy affectedattitudes to work? __________&quot;,&#xd;
+        &quot;correct&quot;: false,&#xd;
+        &quot;subskill&quot;: &quot;&quot;,&#xd;
+        &quot;tryAgain&quot;: null,&#xd;
+        &quot;attempted&quot;: false,&#xd;
+        &quot;inputText&quot;: &quot;Answer the questions. Write NO MORE THAN TWO WORDS from the text in each gap.      \n          \n    \n      \n        Three forces contributed to the moderninvention of time. First, trade with foreign territories across the ocean required precise navigation with accurate timepieces. Second, the invention of the railroad required the standardization of time across countries, replacing local systems of keeping time by the sun. Third, the industrial economy necessitated the introduction of labor laws, which changed the way people thought about work. These developments helped power the industrial revolution and make our modern world.Answer the questions. Write NO MORE THAN TWO WORDS from the text in each gap.  What device did sailors need to use to plot the direction theirships sailed in? __________ Which requirement of the industrial economy affectedattitudes to work? __________&quot;,&#xd;
+        &quot;explanation&quot;: null,&#xd;
+        &quot;givenAnswer&quot;: null,&#xd;
+        &quot;correctAnswer&quot;: null,&#xd;
+        &quot;taskReference&quot;: &quot;IESample Short Answer Questions&quot;,&#xd;
+        &quot;questionNumber&quot;: 19,&#xd;
+        &quot;questionReference&quot;: &quot;56d5cd3e-2d57-4be9-b796-a03ed5d86373&quot;,&#xd;
+        &quot;distractorLevelFeedback&quot;: &quot;Remember that it is always worth giving an answer, even if you are not completely sure that it is right. You will not lose any more marks if you get an answer wrong.&quot;&#xd;
+      }&#xd;
+    ],&#xd;
+    &quot;sessionId&quot;: &quot;9f5b37b9-05ee-45cd-bb9e-f2c2e30522e4&quot;,&#xd;
+    &quot;studentId&quot;: &quot;991677&quot;,&#xd;
+    &quot;templateId&quot;: &quot;IELTSI_PIE&quot;,&#xd;
+    &quot;overallResults&quot;: {&#xd;
+      &quot;skills&quot;: [&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;&quot;,&#xd;
+          &quot;cutoffs&quot;: [&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;OK&quot;,&#xd;
+              &quot;value&quot;: 50&#xd;
+            },&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+              &quot;value&quot;: 70&#xd;
+            }&#xd;
+          ],&#xd;
+          &quot;subskills&quot;: [&#xd;
+            {&#xd;
+              &quot;name&quot;: &quot;&quot;,&#xd;
+              &quot;cutoffs&quot;: [&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+                  &quot;value&quot;: 70&#xd;
+                },&#xd;
+                {&#xd;
+                  &quot;name&quot;: &quot;OK&quot;,&#xd;
+                  &quot;value&quot;: 50&#xd;
+                }&#xd;
+              ],&#xd;
+              &quot;aboveCutoff&quot;: false,&#xd;
+              &quot;description&quot;: null,&#xd;
+              &quot;displayName&quot;: null,&#xd;
+              &quot;feedbackText&quot;: null,&#xd;
+              &quot;totalCorrect&quot;: 4,&#xd;
+              &quot;levelAchieved&quot;: null,&#xd;
+              &quot;percentageResult&quot;: 21,&#xd;
+              &quot;maxPossibleTotalCorrect&quot;: 19&#xd;
+            }&#xd;
+          ],&#xd;
+          &quot;aboveCutoff&quot;: false,&#xd;
+          &quot;description&quot;: &quot;unknown_value&quot;,&#xd;
+          &quot;displayName&quot;: &quot;&quot;,&#xd;
+          &quot;feedbackText&quot;: &quot;unknown_value for below-cutoff&quot;,&#xd;
+          &quot;totalCorrect&quot;: 4,&#xd;
+          &quot;levelAchieved&quot;: null,&#xd;
+          &quot;percentageResult&quot;: 21,&#xd;
+          &quot;maxPossibleTotalCorrect&quot;: 19&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;cutoffs&quot;: [&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;GOOD&quot;,&#xd;
+          &quot;value&quot;: 70&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;OK&quot;,&#xd;
+          &quot;value&quot;: 50&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;aboveCutoff&quot;: false,&#xd;
+      &quot;totalCorrect&quot;: 4,&#xd;
+      &quot;levelAchieved&quot;: null,&#xd;
+      &quot;percentageResult&quot;: 21,&#xd;
+      &quot;maxPossibleTotalCorrect&quot;: 19&#xd;
+    },&#xd;
+    &quot;resultsComplete&quot;: true,&#xd;
+    &quot;sessionReference&quot;: &quot;200607&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${host_url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/v1/lti/platforms/${platformId}/contexts/${sharedOrgId}/lineitems/${resLinkId}/scores</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${access-token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Message Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="1859946287">Scores saved successfully.</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.custom_message">Could not get correct Response Message!</stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">1</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <stringProp name="JSON_PATH">$.message</stringProp>
+          <stringProp name="EXPECTED_VALUE"></stringProp>
+          <boolProp name="JSONVALIDATION">false</boolProp>
+          <boolProp name="EXPECT_NULL">false</boolProp>
+          <boolProp name="INVERT">true</boolProp>
+          <boolProp name="ISREGEX">true</boolProp>
+        </JSONPathAssertion>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
