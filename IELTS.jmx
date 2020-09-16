@@ -25,7 +25,7 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - THOR" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - THOR" enabled="false">
           <collectionProp name="Arguments.arguments">
             <elementProp name="host_url" elementType="Argument">
               <stringProp name="Argument.name">host_url</stringProp>
@@ -170,7 +170,7 @@
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - ALPHA" enabled="false">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - ALPHA" enabled="true">
           <collectionProp name="Arguments.arguments">
             <elementProp name="host_url" elementType="Argument">
               <stringProp name="Argument.name">host_url</stringProp>
@@ -295,6 +295,21 @@
             <elementProp name="prompt" elementType="Argument">
               <stringProp name="Argument.name">prompt</stringProp>
               <stringProp name="Argument.value">none</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="currentTime" elementType="Argument">
+              <stringProp name="Argument.name">currentTime</stringProp>
+              <stringProp name="Argument.value">${__time}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="isReset" elementType="Argument">
+              <stringProp name="Argument.name">isReset</stringProp>
+              <stringProp name="Argument.value">False</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="env" elementType="Argument">
+              <stringProp name="Argument.name">env</stringProp>
+              <stringProp name="Argument.value">alpha</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
