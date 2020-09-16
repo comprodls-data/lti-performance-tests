@@ -16,11 +16,11 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">2</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">200</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">600</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
@@ -239,7 +239,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiZjIzNWJkM2M5MWEzY2Y2MzcyODVhZjkzZTM3ODM4OWYiLCJpYXQiOjE1OTk3MjYwMzUsImV4cCI6MTU5OTgxMjQzNX0.h0CyJb3_Tdu_4061lfz0lNVxvjzlhDSXVOmg04fJjJzYyBabZTMHeBXPlnvP9-5eQ6tEnQKdw5icRMMRaXdR5IKryeb28_7Bxs-Tp41fjn-HjurJzAJ0HTyNPYRBT3EMzHGonaq09ociqKId3W2B8OXD8dcUcrNxF6jeuQlPhyyNVHeSliUMNDhQ9DFYCSS5g-odePv44mXRX1Q7G70Eb_c417rmLcQlNs0B5rcMS95_dZsPt9yOVUHOupXD13xSn-x4wE-r7eJMWkA0xei0IHs3FsDfov7AA9SYEpDtG-70-dgGkhbr_Qasew2qMf5xKbfwLIuOzkCaMpj8-NfPQQ</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkZTBmNjVhODZjIiwic3ViIjoiZGUwZjY1YTg2YyIsImF1ZCI6Imh0dHBzOi8vbHRpLWFscGhhLmNhbWJyaWRnZW9uZS5vcmcvdjEvbHRpL3BsYXRmb3Jtcy83Y2FhOTMwNTU5L29hdXRoIiwianRpIjoiNjBiZWUwMWViOTFjZjg2YTE4OTQ3Yzg4OGViYTA2Y2YiLCJpYXQiOjE2MDAyNTQ0MjMsImV4cCI6MTYwMDM0MDgyM30.Zb9DtZH6LknjtqjDAQtqEHDDeLNmTCa1roLmnlgMr0M-pkboQAI5qTyyoEIPlaxHfvEzI5MJ_WsbZywc4tPpEshfMlNLS5wZS9Zsh_rxXI0USIgnCFbnr_DZ2p0emCCJZllqZYM2XYWw0PzDBDVCtsXTWwUButsBLKDhGbqz0GMgWvTLHDoG2lO8KkN1v1WM8u3U6fAZGW1maYPO4dIiiRSFLE-xhlBWEoMmmGPflzlGkRja3S6dPo4_69rzLLgGNBXe5t_Ab56XRd9imMCCP-1vMb97vXULIkCyZCT-Oe-HO-FKDiBe4GicnaddYnEvmRuclVr5vs1s_TCra2hd3g</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -249,7 +249,7 @@
             </elementProp>
             <elementProp name="sharedOrgId" elementType="Argument">
               <stringProp name="Argument.name">sharedOrgId</stringProp>
-              <stringProp name="Argument.value">sh_thor_cup1_1</stringProp>
+              <stringProp name="Argument.value">sh_alpha_cup1_1</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scoreGiven" elementType="Argument">
@@ -524,7 +524,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -560,7 +560,7 @@ vars.put(&apos;timestamp&apos;, UTCDateTime);
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
