@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="IELTS Test Plan" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="LTI Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
@@ -12,16 +12,16 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="IELTS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="LTI" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.num_threads">200</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">600</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
@@ -94,7 +94,7 @@
             </elementProp>
             <elementProp name="client_assertion" elementType="Argument">
               <stringProp name="Argument.name">client_assertion</stringProp>
-              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkMzk2NzJiOTc1Iiwic3ViIjoiZDM5NjcyYjk3NSIsImF1ZCI6Imh0dHBzOi8vbHRpLWRldi5jb21wcm9kbHMuY29tL3YxL2x0aS9wbGF0Zm9ybXMvOTJlM2RhMTFiOC9vYXV0aCIsImp0aSI6IjNhYmEzMmE0MTdiM2Q4YWE0OTkyMjQwMGU2YzIyMDg4IiwiaWF0IjoxNTk5NzIxMzE3LCJleHAiOjE1OTk4MDc3MTd9.XOiYiDAx3Wch2ma35rmDmT-aqR1w9eUqvdZHiK-z7aq63o9QqW8toj3MnOjFAoyrQZSQ1F3XEMU0JjG9F6ZRrixA9nL8fNWi7jozFqDK0BVRcUJe9WOY3IfcoQ3Xmbbysv3VF5HN6BYDFunp82rdcU971O8I2sd6_OYbqfonq4UdJboum5iZxwbUqrSwNsrTPyJi74CkZSTX9X3kzondgp2uwCjrSJMCsGDQEpYDRbl_ZLGzwsna2pgsVewCOc8GivUI8_mepkXsFeGjWdgZpQh6JftRmiYGHNCwW5I-4XLjEl7xMDIkYaXIEFnvDXCYX7dsUFAYYxuSg_ii3NbRfQ</stringProp>
+              <stringProp name="Argument.value">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJ3S1Y0cW1Fekk2R2xjY09NNmV4aVFfVXR3ZFk4VHFSNkM5bnlQZ2R6MEkifQ.eyJpc3MiOiJkMzk2NzJiOTc1Iiwic3ViIjoiZDM5NjcyYjk3NSIsImF1ZCI6Imh0dHBzOi8vbHRpLWRldi5jb21wcm9kbHMuY29tL3YxL2x0aS9wbGF0Zm9ybXMvOTJlM2RhMTFiOC9vYXV0aCIsImp0aSI6ImEzYmI0ZjkyOGE2MjY4NWM5NWYwNDQwZjk3YTNkOGI1IiwiaWF0IjoxNjAwMjQ0NjcwLCJleHAiOjE2MDAzMzEwNzB9.A5snXAJQ37RZKv5zYjVcRV9peQpU04r2D4pgrJEpJ51DzVGdlTcl1i7rov4V-a_S0_x9Yss_4xWTT6n5lsz-MNR0vlV8BkBGTB4fnSoejMQ4lYI4RCa8Kd3oWVETCb5s5mIP2zbGzxyKiawqVVqLqx5W3RkMJseMiZPF05w8i6OopP2q0aIH0Qs9od-4NYSRFGQ65hg_B4Yv88mACp1wxlJPhhF9fFVFgDC0AsOZSga77EyobRVD2D7H7P24YhViRM2WT9qJ7EXfGDLxpsXdE4l214iy5Nu1mCbS7-PpHAkDbU92Awlof6-h_HT5NKWXnEMpV8U8qqtRmoAk019ZvQ</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="scopeOauth" elementType="Argument">
@@ -132,10 +132,45 @@
               <stringProp name="Argument.value">${__P(scoreGiven,FullyGraded)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="performDurationTestS1" elementType="Argument">
+              <stringProp name="Argument.name">performDurationTestS1</stringProp>
+              <stringProp name="Argument.value">29000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="performDurationTestS2" elementType="Argument">
+              <stringProp name="Argument.name">performDurationTestS2</stringProp>
+              <stringProp name="Argument.value">36400</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MetricaWaitTime" elementType="Argument">
+              <stringProp name="Argument.name">MetricaWaitTime</stringProp>
+              <stringProp name="Argument.value">946</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="prompt" elementType="Argument">
+              <stringProp name="Argument.name">prompt</stringProp>
+              <stringProp name="Argument.value">none</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="currentTime" elementType="Argument">
+              <stringProp name="Argument.name">currentTime</stringProp>
+              <stringProp name="Argument.value">${__time}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="isReset" elementType="Argument">
+              <stringProp name="Argument.name">isReset</stringProp>
+              <stringProp name="Argument.value">False</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="env" elementType="Argument">
+              <stringProp name="Argument.name">env</stringProp>
+              <stringProp name="Argument.value">thor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - ALPHA" enabled="false">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables - ALPHA" enabled="true">
           <collectionProp name="Arguments.arguments">
             <elementProp name="host_url" elementType="Argument">
               <stringProp name="Argument.name">host_url</stringProp>
@@ -242,50 +277,68 @@
               <stringProp name="Argument.value">${__P(scoreGiven,FullyGraded)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="startTime" elementType="Argument">
-              <stringProp name="Argument.name">startTime</stringProp>
-              <stringProp name="Argument.value">0</stringProp>
+            <elementProp name="performDurationTestS1" elementType="Argument">
+              <stringProp name="Argument.name">performDurationTestS1</stringProp>
+              <stringProp name="Argument.value">29000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="performDurationTestS2" elementType="Argument">
+              <stringProp name="Argument.name">performDurationTestS2</stringProp>
+              <stringProp name="Argument.value">36400</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MetricaWaitTime" elementType="Argument">
+              <stringProp name="Argument.name">MetricaWaitTime</stringProp>
+              <stringProp name="Argument.value">946</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="prompt" elementType="Argument">
+              <stringProp name="Argument.name">prompt</stringProp>
+              <stringProp name="Argument.value">none</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="currentTime" elementType="Argument">
+              <stringProp name="Argument.name">currentTime</stringProp>
+              <stringProp name="Argument.value">${__time}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="isReset" elementType="Argument">
+              <stringProp name="Argument.name">isReset</stringProp>
+              <stringProp name="Argument.value">False</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="env" elementType="Argument">
+              <stringProp name="Argument.name">env</stringProp>
+              <stringProp name="Argument.value">alpha</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - THOR" enabled="false">
-          <stringProp name="filename">usersIELTS.csv</stringProp>
-          <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="variableNames">ext-user-id</stringProp>
-          <boolProp name="ignoreFirstLine">true</boolProp>
-          <stringProp name="delimiter">,</stringProp>
-          <boolProp name="quotedData">false</boolProp>
-          <boolProp name="recycle">true</boolProp>
-          <boolProp name="stopThread">false</boolProp>
-          <stringProp name="shareMode">shareMode.all</stringProp>
-        </CSVDataSet>
-        <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - ALPHA" enabled="false">
-          <stringProp name="filename">usersIELTS_alpha.csv</stringProp>
-          <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="variableNames">ext-user-id</stringProp>
-          <boolProp name="ignoreFirstLine">true</boolProp>
-          <stringProp name="delimiter">,</stringProp>
-          <boolProp name="quotedData">false</boolProp>
-          <boolProp name="recycle">true</boolProp>
-          <boolProp name="stopThread">false</boolProp>
-          <stringProp name="shareMode">shareMode.all</stringProp>
-        </CSVDataSet>
-        <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Student Launches IELTS Test" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Student Launches and Performs the Test" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>60.0</value>
+            <value>50.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches the Test" enabled="true"/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">lti_scenario1.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">ext-user-id</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches and Performs the Test" enabled="true"/>
           <hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
               <stringProp name="IncludeController.includepath">invoke.jmx</stringProp>
@@ -299,19 +352,102 @@
               <stringProp name="IncludeController.includepath">keyset.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Performing the Test" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${performDurationTestS1}</stringProp>
+                <stringProp name="RandomTimer.range">0</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Student Launches and Submits IELTS Test" enabled="true">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Student Launches, Performs and Submits LTI Test" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">1</intProp>
           <FloatProperty>
             <name>ThroughputController.percentThroughput</name>
-            <value>40.0</value>
+            <value>50.0</value>
             <savedValue>0.0</savedValue>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">lti_scenario2.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">ext-user-id</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Generate Oauth Token" enabled="true">
+            <stringProp name="IfController.condition">((${__time} - ${currentTime}) &gt; 1800000) &amp;&amp; (&quot;${isReset}&quot; == &quot;False&quot;)  </stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Generate Oauth Token" enabled="true">
+              <stringProp name="IncludeController.includepath">token.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">vars.put(&quot;isReset&quot;, &quot;True&quot;);</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler  - Token" enabled="false">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>true</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <sentBytes>true</sentBytes>
+                  <threadCounts>true</threadCounts>
+                  <idleTime>true</idleTime>
+                  <connectTime>true</connectTime>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+          </hashTree>
           <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Time Conversion from IST to UTC" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
@@ -320,12 +456,12 @@
 import java.time.format.*;
 
 String UTCDateTime  = LocalDateTime.now(ZoneId.of(&quot;UTC-1&quot;)).toString();
-vars.put(&apos;date&apos;, UTCDateTime);
+vars.put(&apos;timestamp&apos;, UTCDateTime);
 </stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches the Test" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Launches and Performs the Test" enabled="true"/>
           <hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Invoke Launch Endpoint" enabled="true">
               <stringProp name="IncludeController.includepath">invoke.jmx</stringProp>
@@ -339,24 +475,41 @@ vars.put(&apos;date&apos;, UTCDateTime);
               <stringProp name="IncludeController.includepath">keyset.jmx</stringProp>
             </IncludeController>
             <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Wait Time for Student to perform the Test" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${performDurationTestS2}</stringProp>
+                <stringProp name="RandomTimer.range">0</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
           </hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Wait for Student to perform the Test" enabled="true">
-            <stringProp name="ConstantTimer.delay">5000</stringProp>
-            <stringProp name="RandomTimer.range">0</stringProp>
-          </UniformRandomTimer>
-          <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Submits IELTS Test" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Student Submits LTI Test" enabled="true"/>
           <hashTree>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Returns Launch Endpoint" enabled="true">
-              <stringProp name="IncludeController.includepath">return.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
-            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Oauth Launch Endpoint" enabled="true">
-              <stringProp name="IncludeController.includepath">oauth.jmx</stringProp>
-            </IncludeController>
-            <hashTree/>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Oauth Launch Endpoint" enabled="true">
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Wait Time for Metrica" enabled="true">
+                <stringProp name="ConstantTimer.delay">${MetricaWaitTime}</stringProp>
+                <stringProp name="RandomTimer.range">0</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+              <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Oauth" enabled="true">
+                <stringProp name="IncludeController.includepath">oauth.jmx</stringProp>
+              </IncludeController>
+              <hashTree/>
+            </hashTree>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Part Scores Launch Endpoint" enabled="true">
               <stringProp name="IncludeController.includepath">part-scores.jmx</stringProp>
+            </IncludeController>
+            <hashTree/>
+            <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Returns Launch Endpoint" enabled="true">
+              <stringProp name="IncludeController.includepath">return.jmx</stringProp>
             </IncludeController>
             <hashTree/>
             <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Full Scores Launch Endpoint" enabled="true">
@@ -365,7 +518,49 @@ vars.put(&apos;date&apos;, UTCDateTime);
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>

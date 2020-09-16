@@ -25,7 +25,7 @@
   &quot;scoreGiven&quot;: ${scoreGiven},&#xd;
   &quot;scoreMaximum&quot;: ${scoreMaximum},&#xd;
   &quot;comment&quot;: &quot;&quot;,&#xd;
-  &quot;timestamp&quot;: &quot;${date}Z&quot;,&#xd;
+  &quot;timestamp&quot;: &quot;${timestamp}Z&quot;,&#xd;
   &quot;activityProgress&quot;: &quot;Completed&quot;,&#xd;
   &quot;gradingProgress&quot;: &quot;FullyGraded&quot;,&#xd;
   &quot;https://www.cambridgeassessment.org.uk/lti/testInstanceId&quot;: 201975,&#xd;
