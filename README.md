@@ -9,11 +9,12 @@ The test will confirm the performance of LTIGW APIs under Load conditions.
 	- API Gateway
 	- 6 Lambda Functions
 	- SNS topic
-
+- Scoring Layer
+	- SQS
+	- 1 Lambda Function
 ### Modules not covered
 - Metrica (Test tool would be stubbed in place of Metrica) 
 - Konakart (Not part of LTI performance test)
-- Scoring Layer (Not part of LTI performance test)
 - C1 (Will be covered as part of C1 performance test)
 
 ### Objectives of the test
@@ -43,7 +44,7 @@ The test will confirm the performance of LTIGW APIs under Load conditions.
 ### What will you monitor? 
 - API Response time
 - API Errors
-- Performance Indexes for Lambda, SNS and API GW
+- Performance Indexes for Lambda, SNS, SQS and API GW
 - Kibana
 
 ## Test Report
