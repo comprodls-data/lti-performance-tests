@@ -1,3 +1,9 @@
+# Old Discussion Threads
+
+https://basecamp.com/2083367/projects/14605574/messages/93208817#comment_780793457
+https://basecamp.com/2083367/projects/14588452/messages/93041165
+https://basecamp.com/2083367/projects/16851480/messages/92127742
+
 # LTIGW Performance Test
 
 The test will confirm the performance of LTIGW APIs under Load conditions.
